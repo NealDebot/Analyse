@@ -18,7 +18,7 @@ De klant probeert een rekening te openen bij de bank. Er moet nagegaan worden of
 . De [underline]#medewerker# vraagt of de klant al een rekening heeft bij de bank
 . De [underline]#medewerker# vraagt de nodige gegevens: naam, voornaam, straat, huisnummer, postcode, gemeente, rijksregisternummer
 . De [underline]#klant# geeft de gevraagde gegevens
-. De [underline]#medewerker# valideert de gegevens volgens *DR_G*
+. De [underline]#medewerker# valideert de gegevens volgens link:DR_VRO.adoc[DR_VRO]
 . De [underline]#medewerker# noteert de gegevens
 . De [underline]#medewerker# vraagt welke soort rekening de klant wilt aanmaken 
 . De [underline]#medewerker# vraagt of er een kredietlimiet moet staan op de rekening.
@@ -48,7 +48,7 @@ De klant probeert een rekening te openen bij de bank. Er moet nagegaan worden of
 [start=10]
 . De [underline]#medewerker# vraagt de gegevens van de cotitularis
 . De [underline]#klant# geeft de gegevens van de cotitularis: naam, voornaam, rijksregisternummer
-. De medewerker controleert de gegevens volgens *DR_GT*
+. De medewerker controleert de gegevens volgens link:DR_GT.adoc[DR_GT]
 
 ==== Exception A : De klant is minderjarig
 [start=6]

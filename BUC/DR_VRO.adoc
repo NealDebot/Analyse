@@ -1,0 +1,3 @@
+== *DR_VRO : Domeinregels Verificatie Rekening Openen*
+. De klant moet meerderjarig zijn
+. De klant moet een geldig Belgisch paspoort kunnen voorleggen
