@@ -2,7 +2,7 @@
 
 == *Rekening openen*
 === *Activity diagram*
-image::activity_diagram_RO.png[]
+image::BUC_RO.png[]
 
 
 === *BUC_RO - Rekening openen*
