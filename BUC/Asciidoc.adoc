@@ -1,9 +1,11 @@
-= A****nalyse les 3: activity diagrams en business use cases
+= *Analyse les 3: activity diagrams en business use cases*
 
-== Rekening openen
-=== Activity diagram
+== *Rekening openen*
+=== *Activity diagram*
+image::activity_diagram_RO.png[]
 
-=== BUC_RO - Rekening openen
+
+=== *BUC_RO - Rekening openen*
 De klant probeert een rekening te openen bij de bank. Er moet nagegaan worden of de klant al bekend is bij de bank en of de klant meerderjarig is.
 
 ==== Actors
@@ -19,6 +21,7 @@ De klant probeert een rekening te openen bij de bank. Er moet nagegaan worden of
 . De [underline]#klant# geeft de gevraagde gegevens
 . De [underline]#medewerker# valideert de gegevens volgens *DR_G*
 . De [underline]#medewerker# houdt de gegevens bij
+. De [underline]#medewerker# vraagt welke soort rekening de klant wilt aanmaken
 . De [underline]#medewerker# maakt de rekening aan
 . De use case eindigt
 
@@ -43,4 +46,20 @@ De klant probeert een rekening te openen bij de bank. Er moet nagegaan worden of
 . De [underline]#medewerker# meldt dit aan de klant
 . De use case eindigt
 
-=== Scenario
+=== *Scenario*
+[%hardbreaks]
+Rekening: Spaarrekening
+Klant: Jan Janssens
+Geboortedatum: 12-09-1975
+Datum: 09-10-2023
+[%hardbreaks]
+Jan janssens komt binnen in de bank. 
+De medewerker vraagt voor nodig gegevens.
+Jan geeft de nodig gegevens.
+De medeweker valideert de gegevens volgens DR_G.
+De medewerker houdt de gegevens bij.
+Jan wilt een spaarrekening openen.
+De mederweker maakt de spaarrekening.
+De use case eindigt. 
+
+
