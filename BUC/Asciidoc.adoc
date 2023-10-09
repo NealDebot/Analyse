@@ -4,7 +4,6 @@
 === *Activity diagram*
 image::BUC_RO.png[]
 
-
 === *BUC_RO - Rekening openen*
 De klant probeert een rekening te openen bij de bank. Er moet nagegaan worden of de klant al bekend is bij de bank en of de klant meerderjarig is.
 
@@ -17,11 +16,13 @@ De klant probeert een rekening te openen bij de bank. Er moet nagegaan worden of
 ==== Basis pad
 . De [underline]#klant# wilt een rekening openen
 . De [underline]#medewerker# vraagt of de klant al een rekening heeft bij de bank
-. De [underline]#medewerker# vraagt de nodige gegevens
+. De [underline]#medewerker# vraagt de nodige gegevens: naam, voornaam, straat, huisnummer, postcode, gemeente, rijksregisternummer
 . De [underline]#klant# geeft de gevraagde gegevens
 . De [underline]#medewerker# valideert de gegevens volgens *DR_G*
-. De [underline]#medewerker# houdt de gegevens bij
-. De [underline]#medewerker# vraagt welke soort rekening de klant wilt aanmaken
+. De [underline]#medewerker# noteert de gegevens
+. De [underline]#medewerker# vraagt welke soort rekening de klant wilt aanmaken 
+. De [underline]#medewerker# vraagt of er een kredietlimiet moet staan op de rekening.
+. De [underline]#medewerker# vraagt of er een cotitularis moet toegevoegd worden.
 . De [underline]#medewerker# maakt de rekening aan
 . De use case eindigt
 
@@ -33,18 +34,28 @@ De klant probeert een rekening te openen bij de bank. Er moet nagegaan worden of
 . De [underline]#medewerker# maakt de rekening aan
 . De use case eindigt
 
-
 ==== Alternatief B : De klant heeft foutieve gegevens doorgegeven
 [start=6]
 . De [underline]#medewerker# informeert de klant over foutieve gegevens
-. Keer terug naar stap 3
+. Keer terug naar stap 3 in het normaal verloop
 
+==== Alternatief C : De klant wilt een kredietlimiet
+[start=9]
+. De [underline]#medewerker# vraagt hoe hoog de klant het limiet mag zijn
+. Keer terug naar stap 10 in het normaal verloop
+
+==== Alternatief D : De klant wilt een cotitularis
+[start=10]
+. De [underline]#medewerker# vraagt de gegevens van de cotitularis
+. De [underline]#klant# geeft de gegevens van de cotitularis: naam, voornaam, rijksregisternummer
+. De medewerker controleert de gegevens volgens *DR_GT*
 
 ==== Exception A : De klant is minderjarig
 [start=6]
 . De [underline]#medewerker# merkt dat de klant niet meerderjarig is
 . De [underline]#medewerker# meldt dit aan de klant
 . De use case eindigt
+
 
 === *Scenario*
 [%hardbreaks]
