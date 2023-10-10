@@ -1,3 +1,5 @@
+link:Groepstaak1.adoc[Ga terug naar het overzicht]
+
 == *Geld storten*
 === *Activity Diagram*
 image::BUC_GS.png[]
@@ -8,8 +10,10 @@ De klant probeert geld te storten naar zijn rekening. Er moet nagegaan worden of
 ==== Actors 
 [underline]##Klant##, medewerker
 
-==== Preconditie 
-De klant is geïdentificeerd. De klant moet een rekening hebben bij de bank.
+==== Preconditie
+[%hardbreaks]
+De klant is geïdentificeerd. 
+De klant moet een rekening hebben bij de bank.
 
 ==== Basis pad 
 . De [underline]#klant# wilt  geld storten
@@ -47,3 +51,5 @@ Jan geeft het bedrag.
 De medewerker noteert de bedrag.
 De medewerker verandert de bedrag op de rekening.
 De use case eindigt.
+
+link:Groepstaak1.adoc[Ga terug naar het overzicht]
