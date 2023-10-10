@@ -1,0 +1,5 @@
+== *DR_GT : Domeinregel Gegevens Titularis*
+[%hardbreaks]
+De titularis moet al bekend zijn bij de bank.
+
+link:BUC_RO.adoc[Ga terug naar de BUC]

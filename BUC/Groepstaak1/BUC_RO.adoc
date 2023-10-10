@@ -1,4 +1,4 @@
-= *Analyse les 3: activity diagrams en business use cases*
+link:Groepstaak1.adoc[Ga terug naar het overzicht]
 
 == *Rekening openen*
 === *Activity diagram*
@@ -67,10 +67,10 @@ Datum: 09-10-2023
 Jan janssens komt binnen in de bank. 
 De medewerker vraagt voor nodig gegevens.
 Jan geeft de nodig gegevens.
-De medeweker valideert de gegevens volgens DR_G.
+De medeweker valideert de gegevens volgens link:DR_VRO.adoc[DR_VRO].
 De medewerker houdt de gegevens bij.
 Jan wilt een spaarrekening openen.
 De mederweker maakt de spaarrekening.
 De use case eindigt. 
 
-
+link:Groepstaak1.adoc[Ga terug naar het overzicht]

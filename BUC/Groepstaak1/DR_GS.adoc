@@ -1,0 +1,6 @@
+== *DR_GS : Domeinregel Geld Storten*
+[%hardbreaks]
+De naam, voornaam en rijksregisternummer van de klant moeten overeenkomen met de gegevens die verbonden zijn aan de rekening. 
+
+
+link:BUC_GS.adoc[Ga terug naar de BUC]
