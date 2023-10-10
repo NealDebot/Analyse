@@ -1,2 +1,5 @@
 == *DR_GT : Gegevens Titularis*
-De titularis moet al bekend zijn bij de bank. 
+[%hardbreaks]
+De titularis moet al bekend zijn bij de bank.
+
+link:BUC_RO.adoc[Ga terug naar de BUC]
