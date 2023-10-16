@@ -1,21 +1,22 @@
+== *Navigatie*
+[%hardbreaks]
+link:BUC_RO.adoc[Ga terug naar BUC_RO]
+link:BUC_GS.adoc[Ga terug naar BUC_GS]
+link:BUC_GA.adoc[Ga terug naar BUC_GA]
+link:BUC_CTT.adoc[Ga terug naar BUC_CTT]
+
 == *DR_GA : Domeinregel Geld Afhalen*
 [%hardbreaks]
 De naam, voornaam en rijksregisternummer van de klant moeten overeenkomen met de gegevens die verbonden zijn aan de rekening. 
-link:BUC_GA.adoc[Ga terug naar de BUC]
 
 == *DR_VRO : Domeinregel Verificatie Rekening Openen*
 . De klant moet meerderjarig zijn
 . De klant moet een geldig Belgisch paspoort kunnen voorleggen
 
-link:BUC_RO.adoc[Ga terug naar de BUC]
-
 == *DR_GS : Domeinregel Geld Storten*
 [%hardbreaks]
 De naam, voornaam en rijksregisternummer van de klant moeten overeenkomen met de gegevens die verbonden zijn aan de rekening. 
-link:BUC_GS.adoc[Ga terug naar de BUC]
 
 == *DR_GT : Domeinregel Gegevens Titularis*
 [%hardbreaks]
 De titularis moet al bekend zijn bij de bank, of de medewerker maakt van de opgegeven titularis een nieuwe klant. 
-
-link:BUC_RO.adoc[Ga terug naar de BUC]

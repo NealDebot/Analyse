@@ -36,5 +36,19 @@ De klant wilt een co-titularis toevoegen aan zijn rekening.
 . De use case eindigt
 
 === *Scenario*
+[%hardbreaks]
+Activity : Co-Titularis Toevoegen
+Klant: Jan Janssens
+Geboortedatum: 16-09-1975
+Datum: 16-10-2023
+[%hardbreaks]
+Jan Janssens komt binnen in de bank.
+Hij wilt zijn vrouw als co-titularis toevoegen aan zijn rekening
+De medewerker vraagt of de titularis gekend is bij de bank
+De medewerker vraagt de nodige gegevens van de titularis: naam, voornaam, rijksregisternummer
+Jan geeft de gevraagde gegevens: Janssens, Lisa, 76.11.13-123.45
+De medewerker valideert de gegevens volgens link:BUC_CTT.adoc[BUC_CTT]
+De medewerker noteert de gegevens van Lisa bij de rekening van de Jan
+De use case eindigt
 
 link:Groepstaak1.adoc[Ga terug naar het overzicht]
