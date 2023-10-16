@@ -1,5 +1,0 @@
-== *DR_VRO : Domeinregel Verificatie Rekening Openen*
-. De klant moet meerderjarig zijn
-. De klant moet een geldig Belgisch paspoort kunnen voorleggen
-
-link:BUC_RO.adoc[Ga terug naar de BUC]

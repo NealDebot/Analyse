@@ -1,6 +1,0 @@
-== *DR_GA : Domeinregel Geld Afhalen*
-[%hardbreaks]
-De naam, voornaam en rijksregisternummer van de klant moeten overeenkomen met de gegevens die verbonden zijn aan de rekening. 
-
-
-link:BUC_GA.adoc[Ga terug naar de BUC]

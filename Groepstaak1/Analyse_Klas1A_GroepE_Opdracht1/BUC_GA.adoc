@@ -8,28 +8,27 @@ image::BUC_GA.png[]
 De klant probeert geld af te halen van zijn rekening. Er moet nagegaan worden of dit mogelijk is en bedrag op zijn rekening veranderd worden.
 
 ==== Actors 
-[underline]##Klant##, medewerker
+[underline]##**Klant**##, medewerker
 
 ==== Preconditie
 [%hardbreaks]
-De klant is geïdentificeerd.
 De klant moet een rekening hebben bij de bank.
 
 ==== Basis pad 
 . De [underline]#klant# wilt geld afhalen
 . De [underline]#medewerker# vraagt de nodige gegevens: naam, voornaam, rekeningnummer en rijksregisternummer
 . De [underline]#klant# geeft de gevraagde gegevens
-. De [underline]#medewerker# valideert de gegeven volgens link:DR_GA.adoc[DR_GA]
-. De [underline]#medewerker# vraagt hoeveel geld  de klant wilt afhalen
-. De [underline]#klant# zegt hoeveel hij wilt afhalen
+. De [underline]#medewerker# valideert de gegeven volgens link:DR.adoc[DR_GA]
+. De [underline]#medewerker# vraagt hoeveel geld de klant wilt afhalen en van welke rekening
+. De [underline]#klant# zegt hoeveel hij wilt afhalen en van welke rekening
 . De [underline]#medewerker# controleert of er voldoende geld op de rekening staat
-. De [underline]#medewerker# geeft het geld aan de klant
+. De [underline]#medewerker# geeft het geld en een bewijs van afhalen aan de klant
 . De [underline]#medewerker# noteert het bedrag
 . De [underline]#medewerker# verandert het bedrag op de rekening
 . De use case eindigt
 
 ==== Postconditie 
-*De  medeweker heeft het bedrag van de rekening verlaagd met de hoeveelheid die de klant vroeg.*
+*De rekening van de klant is met het aangegeven bedrag verlaagd.*
 
 ==== Alternatief A : De klant geeft foutieve gegevens.
 [start=5]
@@ -49,14 +48,14 @@ Geboortedatum: 12-09-1975
 Datum: 09-10-2023
 [%hardbreaks]
 Jan Janssen komt binnen in de bank.
-Jan wilt geld afhalen.
+Jan wilt 200 euro afhalen.
 De medewerker vraagt de nodige gegevens : naam, voornaam, rekeningnummer en rijksregisternummer.
-Jan geeft de gevraagde gegevens.
-De medewerker valideert de gegevens volgens link:DR_GA.adoc[DR_GA].
+Jan geeft de gevraagde gegevens: Janssens, Jan, BE27 1431 0598 9172, 75.09.12-123.45.
+De medewerker valideert de gegevens volgens link:DR.adoc[DR_GA].
 De medewerker vraagt hoeveel geld de klant wil afhalen.
 De medewerker controleert of er voldoende geld is op de rekening.
-De medewerker geeft het gevraagde bedrag.
-De medewerker verandert het bedrag op de rekening.
+De medewerker geeft de 200 euro.
+De medewerker verlaagt het bedrag op de rekening met 200 euro.
 De use case eindigt.
 
 link:Groepstaak1.adoc[Ga terug naar het overzicht]
