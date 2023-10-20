@@ -1,0 +1,38 @@
+== *Evaluatie ingeven*
+=== *Activity Diagram*
+image::BUC_EI.png[]
+
+=== *BUC_EI  - Evaluatie ingeven*
+De leerkracht wilt een evaluatie ingeven.
+
+==== Actors 
+[underline]##**Leerkracht**##, medewerker
+
+==== Preconditie
+/
+
+==== Basis pad
+. De [underline]#leerkracht# wilt een evaluatie ingeven
+. De [underline]#medewerker# vraagt voor welk opleidingsonderdeel de punten zijn
+. De [underline]#leerkracht# zegt over welk opleidingsonderdeel het gaat
+. De [underline]#medewerker# noteert het opleidingsonderdeel
+. De [underline]#medewerker# vraagt een lijst van de studenten en respectievelijke punten
+. De [underline]#leerkracht# geeft de gevraagde lijst
+. De [underline]#medewerker# valideert de lijst met punten
+. De [underline]#medewerker# bewaart de lijst
+. De use case eindigt
+
+==== Postconditie 
+*De evaluatie voor de opleiding is toegevoegd*
+
+==== Alternatief A : 1 of meerdere leerlingen staan niet op de evaluatielijst
+[start=8]
+. De [underline]#medewerker# noteert een 0 als punt bij deze leerling
+. Ga terug naar stap 8 in het normale verloop
+
+==== Exception A : 1 of meerdere leerlingen staan op de evaluatielijst maar staan niet in de opleiding ingeschreven
+[start=8]
+. De [underline]#medewerker# geeft deze info aan de leerkracht 
+. De use case eindigt
+
+=== *Scenario*

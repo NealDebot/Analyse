@@ -1,0 +1,10 @@
+== *Navigatie*
+[%hardbreaks]
+link:BUC_PI.adoc[Ga terug naar BUC_PI]
+link:BUC_EI.adoc[Ga terug naar BUC_EI]
+link:BUC_AO.adoc[Ga terug naar BUC_AO]
+
+== *DR_IS: Domeinregel Inschrijven Student*
+
+De student moet minimaal 18 jaar zijn, een secundair diploma behaald hebben en de Belgische nationaliteit bezitten.
+
