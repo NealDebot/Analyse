@@ -1,0 +1,6 @@
+== *Analyse les 4: activity diagrams en business use cases*
+
+[%hardbreaks]
+. link:BUC_PI.adoc[BUC_PI]
+. link:BUC_EI.adoc[BUC_EI]
+. link:BUC_AO.adoc[BUC_AO]
