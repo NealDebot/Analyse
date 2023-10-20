@@ -18,7 +18,7 @@ De leerkracht wilt afwezigheden opnemen
 . De [underline]#medewerker# noteert de opleiding
 . De [underline]#medewerker# vraagt de lijst van aan-/afwezigheden
 . De [underline]#leerkracht# geeft de gevraagde lijst
-. De [underline]#medewerker# valideert de lijst met aan-/afwezigheden
+. De [underline]#medewerker# valideert de lijst met aan-/afwezigheden volgens link:DR.adoc[DR_CS]
 . De [underline]#medewerker# bewaart de lijst
 . De use case eindigt
 
@@ -48,5 +48,5 @@ De medewerker vraagt voor welke opleiding de afwezigheid is.
 Jan zegt dat het voor Programmeren is.
 De medewerker vraagt wie de afwezigen zijn
 Jan zegt dat alleen Peter afwezig is.
-De medewerker valideert en bewaart de afwezigheid van Peter.
+De medewerker valideert de lijst volgens link:DR.adoc[DR_CS] en bewaart de afwezigheid van Peter.
 De use case eindigt.

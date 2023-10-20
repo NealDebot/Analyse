@@ -18,7 +18,7 @@ De leerkracht wilt een evaluatie ingeven.
 . De [underline]#medewerker# noteert het opleidingsonderdeel
 . De [underline]#medewerker# vraagt een lijst van de studenten en respectievelijke punten
 . De [underline]#leerkracht# geeft de gevraagde lijst
-. De [underline]#medewerker# valideert de lijst met punten
+. De [underline]#medewerker# valideert de lijst met punten volgens link:DR.adoc[DR_CS]
 . De [underline]#medewerker# bewaart de lijst
 . De use case eindigt
 
@@ -48,6 +48,6 @@ Jan geeft de informatie over het opleidingsonderdeel.
 De medewerker noteert het opleidingsonderdeel.
 De medeweker vraagt een lijst van de studenten en respectievelijke punten.
 Jan geeft de gevraagde lijst.
-De medewerker valideert de lijst met punten.
+De medewerker valideert de lijst met punten volgens link:DR.adoc[DR_CS].
 De medewerker bewaart de lijst.
 De use case eindigt.

@@ -8,3 +8,6 @@ link:BUC_AO.adoc[Ga terug naar BUC_AO]
 
 De student moet minimaal 18 jaar zijn, een secundair diploma behaald hebben en de Belgische nationaliteit bezitten.
 
+== *DR_CS: Domeinregel Controle Student*
+. 1 of meerdere leerlingen van de opleiding staan niet op de lijst
+. 1 of meerdere leerlingen staan op de lijst maar zijn niet ingeschreven in de opleiding
