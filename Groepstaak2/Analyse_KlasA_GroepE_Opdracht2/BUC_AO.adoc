@@ -38,15 +38,15 @@ De leerkracht wilt afwezigheden opnemen
 === *Scenario*
 [%hardbreaks]
 Activity: Afwezigheid opnemen
-Student: Jan Janssens
+Leerkracht: Jan Janssens
 Geboortedatum: 12-10-2000
 Datum: 15-09-2023
 [%hardbreaks]
-De leerkracht controleert de aanwezigheden in de klas en merkt dat Jan Janssens niet aanwezig is.
-De leerkracht wilt de afwezigheid opnemen.
+Jan Janssens controleert de aanwezigheden in de klas en merkt dat Peter Peeters niet aanwezig is.
+Jan wilt de afwezigheid opnemen.
 De medewerker vraagt voor welke opleiding de afwezigheid is.
-De leerkracht zegt dat het voor Programmeren is.
+Jan zegt dat het voor Programmeren is.
 De medewerker vraagt wie de afwezigen zijn
-De leerkracht zegt dat alleen Jan Janssens afwezig is.
-De medewerker valideert en bewaart de afwezigheid van Jan Janssens.
+Jan zegt dat alleen Peter afwezig is.
+De medewerker valideert en bewaart de afwezigheid van Peter.
 De use case eindigt.

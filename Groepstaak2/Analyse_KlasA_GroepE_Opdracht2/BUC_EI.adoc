@@ -36,3 +36,18 @@ De leerkracht wilt een evaluatie ingeven.
 . De use case eindigt
 
 === *Scenario*
+[%hardbreaks]
+Activity: Evaluatie ingeven
+Leerkracht: Jan Janssens 
+Geboortedatum: 12-09-1985
+Datum: 20-10-2023
+[%hardbreaks]
+Jan Janssens  wilt de evaluatie van 1ste semester ingeven. 
+De medewerker vraagt voor welk opleidingsonderdeel de punten zijn.
+Jan geeft de informatie over het opleidingsonderdeel.
+De medewerker noteert het opleidingsonderdeel.
+De medeweker vraagt een lijst van de studenten en respectievelijke punten.
+Jan geeft de gevraagde lijst.
+De medewerker valideert de lijst met punten.
+De medewerker bewaart de lijst.
+De use case eindigt.
