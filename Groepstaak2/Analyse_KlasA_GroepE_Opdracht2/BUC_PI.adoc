@@ -1,10 +1,12 @@
+link:Groeptaak2.adoc[Ga terug naar het overzicht]
+
 == *Persoon Inschrijven*
 
 === *Activity Diagram*
 image::BUC_PI.png[]
 
 === *BUC_PI - Persoon Inschrijven*
-Student wilt zich inschrijven aan de school. Alle nodige gegevens moeten opgenomen worden en de persoon moet in het systeem gezet worden.
+Student wilt zich inschrijven voor een aantal vakken aan de school. Alle nodige gegevens moeten opgenomen worden en de persoon moet in het systeem gezet worden.
 
 ==== Actors 
 [underline]##**Student**##, medewerker
@@ -13,43 +15,49 @@ Student wilt zich inschrijven aan de school. Alle nodige gegevens moeten opgenom
 /
 
 ==== Basis pad 
-. De [underline]#student# wilt zich inschrijven aan de hogeschool
-. De [underline]#medewerker# vraagt de nodige gegevens: naam, voornaam, adres, rijksregisternummer, hoogstbehaalde diploma, nationaliteit
-. De [underline]#student# geeft de gevraagde gegevens
-. De [underline]#medewerker# valideert de gegevens volgens link:DR.adoc[DR_IS]
-. De [underline]#medewerker# noteert de gegevens
-. De [underline]#medewerker# vraagt voor welke opleiding de student zich wil inschrijven
-. De [underline]#student# geeft de gekozen opleiding
-. De [underline]#medewerker# finaliseert de inschrijving en houdt alle informatie bij
+. De [underline]#student# wilt zich inschrijven voor een aantal vakken aan de school
+. De [underline]#medewerker# vraagt of de student al is ingeschreven op de school
+. De [underline]#student# wilt zich inschrijven voor 1 of meerdere vakken
+. De [underline]#medewerker# geeft de student een lijst van alle mogelijke vakken en een inschrijvingsformulier
+. De [underline]#student# geeft het ingevulde inschrijvingsformulier terug
+. De [underline]#medewerker# geeft de student zijn emailadres en studentennummer
+. De [underline]#medewerker# vraagt voor welk vak de student zich wil inschrijven
+. De [underline]#student# geeft aan voor welk vak hij zich wil inschrijven
+. De [underline]#medewerker# controleert of het nog mogelijk is om op de huidige datum voor het gekozen vak in te schrijven
+. De [underline]#medewerker# noteert de inschrijving van de student voor het vak
+. De [underline]#medewerker# vraagt of de student zich voor nog een vak wilt inschrijven
+. Stap 7 tot en met stap 11 worden herhaald zolang de student zich voor extra vakken wilt inschrijven
+. De [underline]#medewerker# finaliseert de inschrijving en houdt alle informatie  over de inschrijving en de vakken van de student bij
+. De [underline]#medewerker# overhandigt de inschrijvingsfactuur aan de student
 . De use case eindigt
 
 ==== Postconditie 
-**De student is ingeschreven voor de gekozen opleiding aan de school.**
+**De administratie bevat een inschrijving voor de student voor de gekozen vakken.**
 
-==== Alternatief A : De gegevens kloppen niet volgens link:DR.adoc[DR_IS]
-[start=5]
-. De [underline]#medewerker# meldt dit aan de student
-. Ga terug naar stap 2 in het normale verloop
+==== Alternatief A : de student is nog niet ingeschreven op de school
+[start=3]
+. De [underline]#medewerker# vraagt de nodige gegevens: naam, voornaam, adres, rijksregisternummer, hoogstbehaalde diploma, nationaliteit
+. De [underline]#student# geeft de gevraagde documenten
+. De [underline]#medewerker# valideert de documenten volgens link:DR.adoc[DR_IS]
+. De [underline]#medewerker# noteert de gegevens
+. Ga terug naar stap 3 van het normale verloop
 
-==== Exception A : De student wilt zich inschrijven voor een opleiding die de school niet aanbiedt
-[start=8]
-. De [underline]#medewerker# meldt dit aan de student en raadt de student aan om een andere school te zoeken
+==== Alternatief B : de student koos een vak waarvoor de inschrijvingstermijn is verlopen
+[start=10]
+. De [underline]#medewerker# geeft hiervan melding aan de student
+. Ga terug naar stap 11 van het normale verloop
+
+==== Exception A : de student voldoet bij inschrijving niet aan de voorwaarden volgens link:DR.adoc[DR_IS]
+[start=6]
+. De [underline]#medewerker# geeft hiervan melding aan de student
 . De use case eindigt
 
 === *Scenario*
 [%hardbreaks]
 Activity: Persoon inschrijven
-Klant: Jan Janssens
+Student: Jan Janssens
 Geboortedatum: 12-10-2000
 Datum: 15-09-2023
 [%hardbreaks]
-Jan Janssens komt binnen in het bureau van de studentenadministratie.
-Jan wilt zich inschrijven voor het Graduaat Programmeren.
-De medewerker vraagt de nodige gegevens van Jan: naam, voornaam, adres, rijksregisternummer, hoogstbehaalde diploma, nationaliteit.
-Jan geeft de nodige gegevens: Janssens, Jan, Vlaanderenstraat 50 - 9000 Gent, 00.10.12-123.45, Secundair Diploma ASO Handelswetenschappen, Belg.
-De medewerker valideert de gegevens volgens link:DR.adoc[DR_IS].
-De medewerker noteert de gegevens.
-De medewerker vraagt voor welke opleiding Jan zich wilt inschrijven.
-Jan zegt dat hij zich wilt inschrijven voor het Graduaat Programmeren.
-De medewerker finaliseert de inschrijving en houdt alle informatie bij.
-De use case eindigt.
+
+link:Groeptaak2.adoc[Ga terug naar het overzicht]
