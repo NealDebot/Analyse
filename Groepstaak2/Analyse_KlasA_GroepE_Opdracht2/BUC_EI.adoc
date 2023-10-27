@@ -27,16 +27,16 @@ De leerkracht is in bezit van een leerlingenlijst om op basis daarvan evaluaties
 *De administratie bevat een score voor een student voor een bepaald vak*
 
 ==== Alternatief A : student staat niet op de leerlingenlijst
-[start=3] 
+[start=4] 
 . De [.underline]#docent# merkt dat de student niet op de leerlingenlijst staat
 . De [.underline]#docent# voegt de naam van de student onder de leerlingenlijst toe
 . Ga terug naar stap 4 van het normale verloop
 
 ==== Alternatief B : student staat op de leerlingenlijst maar zit niet in de klas
-[start=3] 
+[start=5] 
 . De [.underline]#docent# merkt dat de student niet in de klas zit
 . De [.underline]#docent# voegt de naam van de student onder de klassenlijst toe
-. Ga terug naar stap 4 van het normale verloop
+. Ga terug naar stap 5 van het normale verloop
 
 === *Scenario*
 [%hardbreaks]
