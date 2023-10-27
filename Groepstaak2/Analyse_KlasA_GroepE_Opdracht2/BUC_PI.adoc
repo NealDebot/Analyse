@@ -59,5 +59,21 @@ Student: Jan Janssens
 Geboortedatum: 12-10-2000
 Datum: 15-09-2023
 [%hardbreaks]
+Jan Janssens wilt zich inschrijven voor aantal vakken van de opleiding graduaat programmeren aan de Hogent.
+De medewerker vraagt of hij al een student bij hogent.
+Hij reageert neen.
+De medewerker geeft hij een lijst van alle mogelijke vakken en een inschrijvingsformulier.
+Hij geeft het ingevulde inschrijvingsformulier terug.
+De medewerker geeft hij zijn nieuwe Hogent emailadres en de studentennummer.
+De medewerker vraagt voor welk vakken hij zich wil inschrijven.
+Hij zegt aan het vak Analyse. 
+De medewerker controleert of het nog mogelijk is om op de huidige datum voor het gekozen vak in te schrijven.
+De medewerker noteert de inschrijving van Jan Jannsens voor het vak. 
+De medewerker vraagt of de student zich voor nog een vak wilt inschrijven.
+Hij reageert ja en zegt de vakken web1 en programmeren.
+Medewerker herhaalt steppen voor de andere twee vakken. 
+De medewerker finaliseert de inschrijving en houdt alle informatie over de inschrijving en de vakken van Jan jansseens bij.
+De medewerker overhandigt de inschrijvingsfactuur aan Jan Janssens.
+De use case eindigt.
 
 link:Groeptaak2.adoc[Ga terug naar het overzicht]

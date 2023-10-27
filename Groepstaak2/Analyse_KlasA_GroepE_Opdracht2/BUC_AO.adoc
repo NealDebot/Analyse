@@ -37,5 +37,13 @@ Leerkracht: Jan Janssens
 Geboortedatum: 12-09-1985
 Datum: 20-10-2023
 [%hardbreaks]
+Jan Janssens wilt de afwezigheden opnemen voor het vak Analyse.
+Hij neemt er de lijst met studenten bij die zijn ingeschreven voor het vak Analyse. 
+Hij roept de eerste naam Adam Smith op zijn lijst of hij aanwezig is.
+Adam Smith reageert dat hij aanwezig is. 
+Hij noteert dat Adam Smith aanwezig is.
+Hij herhaalt voor elke student ingeschreven voor dit vak.
+De use case eindigt.
+
 
 link:Groeptaak2.adoc[Ga terug naar het overzicht]

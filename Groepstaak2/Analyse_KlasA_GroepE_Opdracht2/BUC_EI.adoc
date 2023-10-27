@@ -45,5 +45,14 @@ Leerkracht: Jan Janssens
 Geboortedatum: 12-09-1985
 Datum: 20-01-2024
 [%hardbreaks]
+Jan Janssens wilt de evaluatie van de eerste semster ingeven.
+Hij kiest de vak Analyse om evaluatie in te geven.
+Hij kiest de eerste student op de leerlingenlijst Adam Smith om een evaluatie in te geven.
+Hij controleert of Adam Smith op de inschrijvingslijst voor het vak Analyse staat.
+Hij geeft de gepaste evaluatie in.
+Hij schrijft persoonlijke  feedback bij de evaluatie.
+Hij herhaalt dit voor elke student ingeschreven voor dit vak .
+De use case eindigt.
+
 
 link:Groeptaak2.adoc[Ga terug naar het overzicht]
