@@ -1,0 +1,37 @@
+== *Geld afhalen*
+
+=== *SUC_GA  - Geld afhalen*
+De klant probeert geld af te halen van zijn rekening. Er moet nagegaan worden of dit mogelijk is en bedrag op zijn rekening veranderd worden.
+
+==== Actors 
+[underline]##**Klant**##
+
+==== Preconditie
+[%hardbreaks]
+De klant moet een rekening hebben bij de bank.
+
+==== Basis pad 
+. De [underline]#klant# wilt geld afhalen
+. Het [underline]#Systeem# vraagt de klant om in te loggen
+. De [underline]#klant# logt in met zijn login en passwoord
+. Het [underline]#Systeem# vraagt hoeveel geld de klant wilt afhalen en van welke rekening
+. De [underline]#klant# zegt hoeveel hij wilt afhalen en van welke rekening
+. Het [underline]#Systeem# controleert of er voldoende geld op de rekening staat
+. Het [underline]#Systeem# bewaart het bedrag
+. Het [underline]#Systeem# geeft het geld en een bewijs van afhalen aan de klant
+. Het [underline]#Systeem# verandert het bedrag op de rekening
+. De use case eindigt
+
+==== Postconditie 
+*De rekening van de klant is met het aangegeven bedrag verlaagd.*
+
+==== Alternatief A : De klant geeft foutieve inlog gegevens.
+[start=4]
+. Het [underline]#Systeem# informeert de klant
+. Ga terug naar stap 2
+
+==== Alternatief B : De klant heeft niet genoeg geld op zijn rekening staan
+[start=7]
+. Het [underline]#Systeem# informeert de klant
+. Ga terug naar stap 4
+
