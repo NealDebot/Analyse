@@ -1,0 +1,64 @@
+=== *System Use Case Naam: Plaats Bestelling*
+
+==== Actor
+[underline]##*Klant*##
+
+==== Preconditie
+De artikelen en hun prijzen zijn ingevoerd in het systeem
+
+==== Basispad
+. De klant geeft aan dat hij artikelen wil bestellen.
+. Het systeem geeft een lijst van de bestaande categorieën.
+. De klant selecteert een categorie.
+. Het systeem geeft een lijst  van de artikelen van de geselecteerde categorie.
+. De klant selecteert een artikel.
+. De klant selecteert het aantal.
+. De klant voegt de selectie toe aan de winkelmand.
+. De klant herhaalt stap 3 tot en met 7 totdat hij alle gewenste artikelen heeft besteld.
+. De klant selecteert de winkelmand.
+. Het systeem geeft een lijst van de bestelde artikelen met hun prijs. Er wordt tevens een totale kostprijs voor alle producten gepresenteerd.
+. Het systeem vraagt  de gebruiker om in te loggen.
+. De klant logt in met zijn login en paswoord.
+. Het systeem toont een boodschap dat de bestaande factuur- en verzendgegevens voor deze bestelling moeten worden gebruikt.
+. De klant bevestigt dat de bestaande factuur- en verzendgegevens voor deze bestelling moeten worden gebruikt.
+. Het systeem geeft het bedrag aan dat de bestelling zal kosten, inclusief de toepasselijke belastingen en verzendkosten.
+. De klant bevestigt dat de bestelinformatie juist is.
+. Het systeem toont de betaalpagina aan de gebruiker met als opties bancontact en PayPal.
+. De klant verricht de betaling.
+. Het systeem bewaart de gegevens van de bestelling.
+. Het systeem voorziet de gebruiker van een tracking ID voor de bestelling.
+. Het systeem presenteert de geschatte leveringsdatum aan de gebruiker.
+. Het systeem meldt de gebruiker dat de bestelling is geplaatst.
+. Einde use case.
+
+==== Postconditie
+*Het systeem bevat een bestelling voor de artikelen die de ingelogde klant heeft besteld.*
+
+==== Alternatief A : De gebruiker voert de betaling niet uit.
+[start=18]
+. Het systeem geeft een melding dat het betaaltermijn is verlopen. 
+. Ga terug naar stap 17 in het normaal verloop.
+
+==== Alternatief B : De gebruiker is niet akkoord met de vorig ingevoerde factuur en verzendgegevens.
+[start=14]
+. Het systeem vraagt de juiste factuur- en verzendgegevens.
+. De klant voert de juiste factuur- en verzendgegevens in.
+. Ga terug naar stap 17 in het normaal verloop. 
+
+==== Exception A : De gebruiker stop met winkelen en verlaat het systeem.
+[%hardbreaks]
+Einde use case.
+Postconditie: geen.
+
+==== Exception B : Het systeem kan de bestelling niet registreren.
+[start=20]
+. Het systeem zegt dat de bestelling niet is gelukt.
+. Het systeem zegt met het betaalbewijs een mail te sturen naar de klantendienst.
+. Einde use case.
+
+Postconditie: Het systeem bevat een betaling maar geen bijhorende bestelling voor de artikelen die de ingelogde klant heeft besteld. 
+
+==== Exception C : De gebruiker logt niet in.
+[%hardbreaks]
+Einde use case.
+Postconditie: geen.

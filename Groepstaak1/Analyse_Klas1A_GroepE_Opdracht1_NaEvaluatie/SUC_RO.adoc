@@ -1,0 +1,57 @@
+== *Rekening openen*
+=== *SUC_RO - Rekening openen*
+De klant probeert een rekening te openen bij de bank. Er moet nagegaan worden of de klant al bekend is bij de bank en of de klant meerderjarig is.
+
+==== Actors
+[underline]##**Klant**##
+
+==== Preconditie
+/
+
+==== Basis pad
+. De [underline]#klant# wilt een rekening openen
+. Het systeem vraagt of de klant al een rekening heeft bij de bank
+. De [underline]#klant# zegt dat hij nog geen rekening heeft bij de bank.
+. Het systeem vraagt de nodige gegevens: naam, voornaam, straat, huisnummer, postcode, gemeente, rijksregisternummer
+. De [underline]#klant# geeft de gevraagde gegevens
+. Het systeem valideert de gegevens volgens link:DR.adoc[DR_VRO]
+. Het systeem slaat de gegevens op
+. Het systeem vraagt welke soort rekening de klant wilt aanmaken
+. De [underline]#klant# zegt welke soort rekening hij wilt
+. Het systeem vraagt of er een kredietlimiet moet staan op de rekening
+. De [underline]#klant# zegt dat er geen kredietlimiet nodig is
+. Het systeem vraagt of er een cotitularis moet toegevoegd worden.
+. De [underline]#klant# zegt dat er geen cotitularis moet toegevoegd worden.
+. Het systeem maakt de rekening aan
+. Einde use case
+
+==== Postconditie
+*Het systeem bevat een extra rekening op naam van de klant.* 
+
+==== Alternatief A : De klant is al gekend bij de bank
+[start=3]
+. Ga door naar stap 8 in het normaal verloop
+
+==== Alternatief B : De klant heeft foutieve gegevens doorgegeven volgens link:DR.adoc[DR_VRO]
+[start=7]
+. Het systeem informeert de klant over foutieve gegevens
+. Keer terug naar stap 3 in het normaal verloop
+
+==== Alternatief C : De klant wilt een kredietlimiet
+[start=9]
+. Het systeem vraagt hoe hoog de klant het limiet mag zijn
+. De klant geeft mee hoe hoog het limiet moet zijn
+. Keer terug naar stap 10 in het normaal verloop
+
+==== Alternatief D : De klant wilt een cotitularis
+[start=10]
+. De medewerker doorloopt de stappen gegeven in link:BUC_CTT.adoc[BUC_CTT]
+. Keer terug naar stap 12 in het normaal verloop
+
+==== Exception A : De klant voldoet niet aan de inschrijvingsvoorwaarden volgens link:DR.adoc[DR_VRO]
+[start=6]
+. Het syteem merkt dat de klant niet aan de inschrijvingsoorwaarden voldoet
+. Het systeem meldt dit aan de klant
+. Einde use case
+
+Postconditie: geen. 
