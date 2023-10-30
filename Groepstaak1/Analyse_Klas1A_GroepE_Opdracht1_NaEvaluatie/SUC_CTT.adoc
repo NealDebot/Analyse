@@ -1,0 +1,27 @@
+== *Systeem Use Case Naam :Co-Titularis Toevoegen*
+== Actor : [underline]##**De Klant**##.
+
+==== Preconditie
+/
+
+==== Preconditie
+. De klant  wilt een cotitularis toevoegen aan zijn rekening 
+. Het systeem vraagt of de titularis gekend is bij de systeem 
+. Het systeem vraagt de naam, voornaam, straat, huisnummer, postcode, gemeente en rijksregisternummer van de titularis
+. Het  medewerker voegt gevraagd gegevens  toe .
+. Het systeem valideert de gegevens volgens  DR_VRO 
+. Het systeem bewaart de gegevens .
+. Het systeem voegt de cotitularids toe.
+
+==== Postconditie 
+*De titularis is toegevoegd aan  de rekening .*
+
+==== Alternatief A : De titularis is nog niet gekend bij de bank
+[start=3]
+. De systeem vraagt de naam, voornaam en het rijksregisternummer van de co-titularis
+. Ga terug naar stap 6 in het gewone verloop
+
+==== Exception A : De klant gaf niet de nodige gegevens volgens DR_VRO
+[start=6]
+. De Systeem informeert de klant
+. De use case eindigt
