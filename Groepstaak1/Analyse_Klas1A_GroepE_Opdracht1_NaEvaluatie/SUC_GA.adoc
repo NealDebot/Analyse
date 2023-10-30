@@ -12,14 +12,15 @@ De klant moet een rekening hebben bij de bank.
 
 ==== Basis pad 
 . De [underline]#klant# wilt geld afhalen
-. Het [underline]#Systeem# vraagt de klant om in te loggen
+. Het Systeem vraagt de klant om in te loggen
 . De [underline]#klant# logt in met zijn login en passwoord
-. Het [underline]#Systeem# vraagt hoeveel geld de klant wilt afhalen en van welke rekening
-. De [underline]#klant# zegt hoeveel hij wilt afhalen en van welke rekening
-. Het [underline]#Systeem# controleert of er voldoende geld op de rekening staat
-. Het [underline]#Systeem# bewaart het bedrag
-. Het [underline]#Systeem# geeft het geld en een bewijs van afhalen aan de klant
-. Het [underline]#Systeem# verandert het bedrag op de rekening
+. Het Systeem vraagt hoeveel geld de klant wilt afhalen 
+. De [underline]#klant# zegt hoeveel hij wilt afhalen
+. Het Systeem vraagt van welke rekening
+. De [underline]#klant# zegt van welke rekening
+. Het Systeem controleert of er voldoende geld op de rekening staat
+. Het Systeem bewaart de transactie
+. Het Systeem geeft het geld en een bewijs van afhalen aan de klant
 . De use case eindigt
 
 ==== Postconditie 
