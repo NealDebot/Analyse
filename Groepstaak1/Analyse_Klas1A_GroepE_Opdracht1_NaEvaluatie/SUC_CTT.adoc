@@ -1,27 +1,32 @@
-== *Systeem Use Case Naam :Co-Titularis Toevoegen*
-== Actor : [underline]##**De Klant**##.
+== *Systeem Use Case Naam: Co-Titularis Toevoegen*
+==== Actor 
+[underline]##**De Klant**##.
 
 ==== Preconditie
 /
 
 ==== Preconditie
 . De klant  wilt een cotitularis toevoegen aan zijn rekening 
-. Het systeem vraagt of de titularis gekend is bij de systeem 
+. Het systeem vraagt of de titularis gekend is in het systeem 
+. De klant zegt dat de titularis nog niet gekend is bij de bank
 . Het systeem vraagt de naam, voornaam, straat, huisnummer, postcode, gemeente en rijksregisternummer van de titularis
-. Het  medewerker voegt gevraagd gegevens  toe .
-. Het systeem valideert de gegevens volgens  DR_VRO 
-. Het systeem bewaart de gegevens .
-. Het systeem voegt de cotitularids toe.
+. De klant geeft de gevraagde gegevens
+. Het systeem valideert de gegevens van de titularis volgens link:DR.adoc[DR_VRO] 
+. Het systeem bewaart de gegevens
+. Het systeem voegt de cotitularis toe aan de rekening van de klant
+. Einde use case
 
 ==== Postconditie 
-*De titularis is toegevoegd aan  de rekening .*
+*De titularis is toegevoegd aan de rekening van de klant.*
 
-==== Alternatief A : De titularis is nog niet gekend bij de bank
-[start=3]
-. De systeem vraagt de naam, voornaam en het rijksregisternummer van de co-titularis
-. Ga terug naar stap 6 in het gewone verloop
+==== Alternatief A : De titularis is al gekend bij de bank
+[start=4]
+. De klant geeft naam en voornaam van de titularis
+. Ga verder naar stap 7 in het normale verloop
 
-==== Exception A : De klant gaf niet de nodige gegevens volgens DR_VRO
+==== Exception A : De klant gaf niet de nodige gegevens volgens link:DR.adoc[DR_VRO] 
 [start=6]
-. De Systeem informeert de klant
-. De use case eindigt
+. Het systeem informeert de klant
+. Einde use case
+
+Postconditie: geen.
