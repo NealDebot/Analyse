@@ -45,13 +45,13 @@ Leerkracht: Jan Janssens
 Geboortedatum: 12-09-1985
 Datum: 20-01-2024
 [%hardbreaks]
-Jan Janssens wilt de evaluatie van de eerste semster ingeven.
-Hij kiest de vak Analyse om evaluatie in te geven.
-Hij kiest de eerste student op de leerlingenlijst Adam Smith om een evaluatie in te geven.
-Hij controleert of Adam Smith op de inschrijvingslijst voor het vak Analyse staat.
-Hij geeft de gepaste evaluatie in.
-Hij schrijft persoonlijke  feedback bij de evaluatie.
-Hij herhaalt dit voor elke student ingeschreven voor dit vak .
+Leerkracht Jan Janssens wilt de evaluatie van het eerste semester ingeven.
+Jan kiest het vak Analyse om de evaluatie in te geven.
+Jan kiest de eerste student op de leerlingenlijst (Adam Smith) om een evaluatie in te geven.
+Jan controleert of Adam op de inschrijvingslijst voor het vak Analyse staat.
+Jan geeft de evaluatiescore in.
+Jan schrijft persoonlijke feedback bij de evaluatie.
+Jan herhaalt dit voor elke student ingeschreven voor dit vak.
 De use case eindigt.
 
 
