@@ -1,0 +1,43 @@
+== *System Use Case: Persoon inschrijven*
+
+==== Actors
+[underline]##*Student*##
+
+==== Basis pad 
+. De [underline]#student# wilt zich inschrijven voor een aantal vakken aan de school
+. Het systeem vraagt of de student al is ingeschreven op de school
+. De [underline]#student# antwoordt nee
+. Het systeem geeft de student het inschrijvingsformulier
+. De [underline]#student# vult het inschrijvingsformulier in
+. Het systeem valideert de gegevens volgens link:DR.adoc[DR_IS]
+. Het systeem geeft de student zijn emailadres en studentennummer
+. Het systeem geeft de student een lijst van alle mogelijke vakken
+. Het systeem vraagt voor welk vak de student zich wil inschrijven
+. De [underline]#student# geeft aan voor welk vak hij zich wil inschrijven
+. Het systeem controleert of het nog mogelijk is om op de huidige datum voor het gekozen vak in te schrijven
+. Het systeem bewaart de inschrijving van de student voor het vak
+. Het systeem vraagt of de student zich voor nog een vak wilt inschrijven
+. Stap 8 tot en met stap 13 worden herhaald zolang de student zich voor extra vakken wilt inschrijven
+. Het systeem finaliseert de inschrijving en bewaart alle informatie over de inschrijving en de vakken van de student
+. Het systeem stuurt de inschrijvingsfactuur van de student door naar het emailadres van de student en geeft hiervan melding aan de student
+. De [underline]#student# sluit het programma af
+. De use case eindigt
+
+==== Postconditie 
+**Het systeem bevat een inschrijving voor de student voor de gekozen vakken.**
+
+==== Alternatief A : de student is al ingeschreven op de school
+[start=4]
+. Ga verder naar stap 8 van het normale verloop
+
+==== Alternatief B : de student koos een vak waarvoor de inschrijvingstermijn is verlopen
+[start=12]
+. Het systeem geeft hiervan melding aan de student
+. Ga terug naar stap 13 van het normale verloop
+
+==== Exception A : de student voldoet bij inschrijving niet aan de voorwaarden volgens link:DR.adoc[DR_IS]
+[start=7]
+. Het systeem geeft hiervan melding aan de student
+. De use case eindigt
+
+*Postconditie: geen*

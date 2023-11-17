@@ -1,8 +1,4 @@
-link:Groepstaak1.adoc[Ga terug naar het overzicht]
-
 == *Geld storten*
-=== *Activity Diagram*
-image::BUC_GS.png[]
 
 === *SUC_GS  - Geld storten*
 De klant probeert geld te storten naar zijn rekening. Er moet nagegaan worden of dit mogelijk is en bedrag op zijn rekening veranderd worden.
