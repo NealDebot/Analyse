@@ -1,0 +1,30 @@
+== *System Use Case: Evaluatie ingeven*
+
+==== Actors
+[underline]##*Leerkracht*##
+
+==== Preconditie
+De leerkracht is in bezit van een leerlingenlijst om op basis daarvan evaluaties in te geven.
+
+==== Basis pad
+. De [.underline]#leerkracht# wilt een evaluatie ingeven
+. Het systeem toont voor welke module de leerkracht een evaluatie kan ingeven
+. De [.underline]#leerkracht# kiest voor welke module dat hij een evaluatie wilt ingeven
+. Het systeem toont de studentenlijst van de studenten die zijn ingeschreven voor deze module
+. De [.underline]#leerkracht# kiest een student op de leerlingenlijst waarvoor hij een evaluatie wilt ingeven
+. De [.underline]#leerkracht# geeft de juiste score in volgens link:DR.adoc[DR_ST]
+. De [.underline]#leerkracht# schrijft feedback bij de evaluatie volgens link:DR.adoc[DR_FE]
+. De [.underline]#leerkracht# slaat de evaluatie en feedback op
+. Het systeem bewaart de gegevens
+. Stap 4 tot en met stap 9 worden herhaald voor elke student ingeschreven voor dit vak
+. De [.underline]#leerkracht# sluit het programma af
+. De use case eindigt
+
+==== Postconditie
+*Het systeem bevat een score voor alle studenten voor een bepaalde module*
+
+==== Alternatief A : student staat niet op de leerlingenlijst
+[start=5] 
+. De [.underline]#leerkracht# merkt dat de student niet op de leerlingenlijst staat
+. De [.underline]#leerkracht# voegt de naam van de student onder de leerlingenlijst toe
+. Ga terug naar stap 4 van het normale verloop

@@ -1,0 +1,45 @@
+== *System Use Case: Persoon inschrijven*
+
+==== Actors
+[underline]##*Medewerker*##
+
+==== Basis pad 
+. De [underline]#medewerker# wilt een student inschrijven voor een aantal vakken aan de school
+. Het systeem vraagt of de student al is ingeschreven op de school
+. De [underline]#medeweker# antwoordt nee
+. Het systeem geeft het inschrijvingsformulier
+. De [underline]#medewerker# vult het inschrijvingsformulier in
+. Het systeem valideert de gegevens volgens link:DR.adoc[DR_IS]
+. Het systeem geeft de medewerker het emailadres en studentennummer van de student volgens link:DR.adoc[DR_GS]
+. Het systeem geeft de medewerker een lijst van alle mogelijke opleidingen
+. De [underline]#medewerker# kiest voor welke opleiding hij de student wil inschrijven
+. Het systeem geeft de medewerker een lijst van alle mogelijke vakken in de gekozen opleiding waarvoor de student nog kan ingeschreven worden
+. Het systeem vraagt voor welk vak de student zich wil inschrijven
+. De [underline]#medewerker# kiest voor welk vak hij de student wil inschrijven
+. Het systeem bewaart de inschrijving van de student voor het vak
+. Het systeem vraagt of de student zich voor nog een vak wilt inschrijven
+. Stap 10 tot en met stap 14 worden herhaald zolang de student zich voor extra vakken wilt inschrijven
+. Het systeem finaliseert de inschrijving en bewaart alle informatie over de inschrijving, de opleiding en de vakken van de student
+. De [underline]#medewerker# sluit het programma af
+. De use case eindigt
+
+==== Postconditie 
+**Het systeem bevat een inschrijving voor de student voor de gekozen vakken.**
+
+==== Alternatief A : de student is al ingeschreven op de school
+[start=4]
+. Ga verder naar stap 8 van het normale verloop
+
+==== Exception A : de student voldoet bij inschrijving niet aan de voorwaarden volgens link:DR.adoc[DR_IS]
+[start=7]
+. Het systeem geeft hiervan melding aan de medewerker
+. De use case eindigt
+
+*Postconditie: geen*
+
+==== Exception B : er zijn geen vakken meer waarvoor de student kan ingeschreven worden
+[start=11]
+. Het systeem geeft hiervan melding aan de medewerker
+. De use case eindigt
+
+*Postconditie: geen*

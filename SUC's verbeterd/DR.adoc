@@ -1,0 +1,17 @@
+== *Navigatie*
+[%hardbreaks]
+link:SUC_PI.adoc[Ga terug naar SUC_PI]
+link:SUC_EI.adoc[Ga terug naar SUC_EI]
+
+== *DR_IS: Domeinregel Inschrijven Student*
+De student moet minimaal 18 jaar zijn, een secundair diploma behaald hebben en de Belgische nationaliteit bezitten.
+
+== *DR_GS: Domeinregel Gegevens Student*
+. Het emailadres wordt opgebouwd uit een combinatie van de voor- en achternaam van de student. In eerste instantie wordt de eerste letter van de voornaam en de volledige achternaam aan elkaar geschreven. Indien deze combinatie niet meer beschikbaar is, gaat men op zoek naar om het even welke andere combinatie van voor- en achternaam. vb: \sclaeys@student.hogent.be
+. Het studentennummer wordt opgemaakt uit de eerste letter van de voornaam, de eerste letter van de achternaam en de geboortedatum (ddmmyyyy). vb -> sc10122000. 
+
+== *DR_ST: Domeinregel Score Toekennen*
+De score staat op 20 punten in totaal. 
+
+== *DR_FE: Domeinregel Feedback Evaluatie*
+De feedback mag maximaal 500 tekens bevatten.

@@ -1,0 +1,29 @@
+== *System Use Case: Afwezigheden Opnemen*
+
+==== Actors
+[underline]##*Leerkracht*##
+
+==== Preconditie
+/
+
+==== Basis pad
+. De [underline]#leerkracht# wilt de afwezigheden opnemen voor een bepaald vak
+. Het systeem toont de lijst met alle vakken waarvoor de leerkracht afwezigheden kan ingeven
+. De [underline]#leerkracht# kiest het vak waarvoor hij de afwezigheden wilt opnemen
+. Het systeem toont de lijst met alle studenten die zijn ingeschreven voor het vak
+. De [underline]#leerkracht# kiest een student waarvoor hij de aan-/afwezigheid wilt invullen
+. De [underline]#leerkracht# noteert de aan-/afwezigheid van deze student
+. Stap 4 tot en met stap 6 worden herhaald voor elke student ingeschreven voor dit vak
+. De [underline]#leerkracht# slaat de ingevulde gegevens op
+. Het systeem bewaart de gegevens
+. De [underline]#leerkracht# sluit het programma af
+. De use case eindigt
+
+==== Postconditie
+*Het systeem bevat een aanwezigheidsstatus voor een student voor een bepaald vak*
+
+==== Alternatief A : de student staat niet op de lijst
+[start=5]
+. De [.underline]#leerkracht# merkt dat de student niet op de studentenlijst staat
+. De [.underline]#leerkracht# voegt de naam van de student onder de studentenlijst toe
+. Ga terug naar stap 5 in het normale verloop
