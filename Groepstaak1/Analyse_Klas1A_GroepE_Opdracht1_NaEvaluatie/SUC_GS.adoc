@@ -11,15 +11,15 @@ De klant probeert geld te storten naar zijn rekening. Er moet nagegaan worden of
 De klant moet een rekening hebben bij de bank.
 
 ==== Basis pad 
-. De [underline]#klant# wilt  geld storten
-. Het [underline]#systeem# vraagt de nodige gegevens: naam, voornaam, rekeningnummer, rijksregisternummer
+. De [underline]#klant# wilt geld storten
+. Het systeem vraagt de nodige gegevens: naam, voornaam, rekeningnummer, rijksregisternummer
 . De [underline]#klant# geeft de gevraagde gegevens
-. Het [underline]#systeem# valideert de gegevens volgens link:DR.adoc[DR_GS]
-. Het [underline]#systeem# vraagt hoeveel geld gestort moet worden en op welke rekening
+. Het systeem valideert de gegevens volgens link:DR.adoc[DR_GS]
+. Het systeem vraagt hoeveel geld gestort moet worden en op welke rekening
 . De [underline]#klant# geeft het bedrag en de rekening
-. Het [underline]#systeem# noteert het bedrag
-. Het [underline]#systeem# verandert het bedrag op de rekening
-. Het [underline]#systeem# geeft de klant een bewijs van storting
+. Het systeem noteert het bedrag
+. Het systeem verandert het bedrag op de rekening
+. Het systeem geeft de klant een bewijs van storting
 . De use case eindigt
 
 ===== Postconditie 
@@ -27,7 +27,7 @@ De klant moet een rekening hebben bij de bank.
 
 ==== Alternatief A : De klant gaf foutieve gegevens
 [start=5]
-. Het [underline]#systeem# informeert de klant
+. Het systeem informeert de klant
 . Ga terug naar stap 2
 
 === *Scenario*

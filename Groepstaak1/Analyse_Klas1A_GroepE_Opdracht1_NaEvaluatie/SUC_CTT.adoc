@@ -6,11 +6,11 @@
 /
 
 ==== Preconditie
-. De klant  wilt een cotitularis toevoegen aan zijn rekening 
+. De [underline]#klant#  wilt een cotitularis toevoegen aan zijn rekening 
 . Het systeem vraagt of de titularis gekend is in het systeem 
-. De klant zegt dat de titularis nog niet gekend is bij de bank
+. De [underline]#klant# zegt dat de titularis nog niet gekend is bij de bank
 . Het systeem vraagt de naam, voornaam, straat, huisnummer, postcode, gemeente en rijksregisternummer van de titularis
-. De klant geeft de gevraagde gegevens
+. De [underline]#klant# geeft de gevraagde gegevens
 . Het systeem valideert de gegevens van de titularis volgens link:DR.adoc[DR_VRO] 
 . Het systeem bewaart de gegevens
 . Het systeem voegt de cotitularis toe aan de rekening van de klant
@@ -21,7 +21,7 @@
 
 ==== Alternatief A : De titularis is al gekend bij de bank
 [start=4]
-. De klant geeft naam en voornaam van de titularis
+. De [underline]#klant# geeft naam en voornaam van de titularis
 . Ga verder naar stap 7 in het normale verloop
 
 ==== Exception A : De klant gaf niet de nodige gegevens volgens link:DR.adoc[DR_VRO] 
