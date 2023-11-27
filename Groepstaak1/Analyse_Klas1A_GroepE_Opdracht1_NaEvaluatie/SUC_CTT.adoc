@@ -7,8 +7,8 @@
 
 ==== Preconditie
 . De [underline]#klant#  wilt een cotitularis toevoegen aan zijn rekening 
-. Het systeem vraagt of de titularis gekend is in het systeem 
-. De [underline]#klant# zegt dat de titularis nog niet gekend is bij de bank
+. Het systeem vraagt of de titularis gekend is in het systeem en aan welke rekening de cotitularis mag toegevoegd worden
+. De [underline]#klant# zegt dat de titularis nog niet gekend is bij de bank en geeft het gevraagde rekeningnummer
 . Het systeem vraagt de naam, voornaam, straat, huisnummer, postcode, gemeente en rijksregisternummer van de titularis
 . De [underline]#klant# geeft de gevraagde gegevens
 . Het systeem valideert de gegevens van de titularis volgens link:DR.adoc[DR_VRO] 
